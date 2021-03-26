@@ -21,15 +21,25 @@ import BingMapsSearchProviderViewModel from 'terriajs/lib/ViewModels/BingMapsSea
 import GazetteerSearchProviderViewModel from 'terriajs/lib/ViewModels/GazetteerSearchProviderViewModel.js';
 import GnafSearchProviderViewModel from 'terriajs/lib/ViewModels/GnafSearchProviderViewModel.js';
 import defined from 'terriajs-cesium/Source/Core/defined';
-import Ion from 'terriajs-cesium/Source/Core/Ion';
 import render from './lib/Views/render';
 
-Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwYThkNjU5OC00ZWMwLTQ4YjctOTc3Mi1lMzkxNDQxM2Y1OGQiLCJpZCI6MzIzNSwiaWF0IjoxNTM2NTYwOTQ1fQ.6hTn29nQ_F1k4C7YpApgHbqm-51bNMZJHZ1_CdW2f5A';
+// import createCatalogMemberFromType from 'terriajs/lib/Models/createCatalogMemberFromType';
+// import NaverStreetMapCatalogItem from './lib/Models/NaverMapCatalogItem';
+
+// i18n 한국어
+import i18next from 'i18next';
+import translationKr from './lib/Language/ko-KR/translation.json';
+i18next.addResourceBundle('ko-KR', 'translation', translationKr, true, true);
 
 // Register all types of catalog members in the core TerriaJS.  If you only want to register a subset of them
 // (i.e. to reduce the size of your application if you don't actually use them all), feel free to copy a subset of
 // the code in the registerCatalogMembers function here instead.
 registerCatalogMembers();
+// createCatalogMemberFromType.register(
+//   "naver-street-map",
+//   NaverStreetMapCatalogItem
+// );
+
 registerAnalytics();
 
 terriaOptions.analytics = new GoogleAnalytics();

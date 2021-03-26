@@ -34,7 +34,7 @@ export default function UserInterface(props) {
     <StandardUserInterface {...props} version={version}>
       <Menu>
         <RelatedMaps viewState={props.viewState} />
-        <MenuItem caption="About" href="about.html" key="about-link" />
+        <MenuItem caption="정보" href="about.html" key="about-link" />
       </Menu>
       <Nav>
         <MeasureTool terria={props.viewState.terria} key="measure-tool" />

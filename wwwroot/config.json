@@ -4,6 +4,7 @@
         "terria"
     ],
     parameters: {
+        cesiumIonAccessToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwYThkNjU5OC00ZWMwLTQ4YjctOTc3Mi1lMzkxNDQxM2Y1OGQiLCJpZCI6MzIzNSwiaWF0IjoxNTM2NTYwOTQ1fQ.6hTn29nQ_F1k4C7YpApgHbqm-51bNMZJHZ1_CdW2f5A",
         googleUrlShortenerKey: null,
         googleAnalyticsKey: null,
         googleAnalyticsOptions: null,

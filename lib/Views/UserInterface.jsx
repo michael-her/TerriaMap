@@ -9,10 +9,14 @@ import PropTypes from "prop-types";
 import React from "react";
 import RelatedMaps from "./RelatedMaps";
 import SplitPoint from "terriajs/lib/ReactViews/SplitPoint";
-import StandardUserInterface from "terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface.jsx";
+// import StandardUserInterface from "terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface.jsx";
 import version from "../../version";
 
 import "./global.scss";
+
+const StandardUserInterface = require("terriajs/lib/Core/container").injectComponents(
+  []
+);
 
 function loadAugmentedVirtuality(callback) {
   require.ensure(
@@ -34,7 +38,7 @@ export default function UserInterface(props) {
     <StandardUserInterface {...props} version={version}>
       <Menu>
         <RelatedMaps viewState={props.viewState} />
-        <MenuItem caption="정보" href="about.html" key="about-link" />
+        {/* <MenuItem caption="정보" href="about.html" key="about-link" /> */}
       </Menu>
       <Nav>
         <MeasureTool terria={props.viewState.terria} key="measure-tool" />

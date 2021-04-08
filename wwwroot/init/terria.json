@@ -1,16 +1,104 @@
 {
   "homeCamera": {
-    "north": -8,
-    "east": 158,
-    "south": -45,
-    "west": 109
+    "north": 38,
+    "east": 131,
+    "south": 35,
+    "west": 127
   },
-  "catalog": [
-    {
-      "name": "Example Datasets",
+  "catalog": [{
+      "name": "배경지도",
       "type": "group",
       "preserveOrder": true,
       "isOpen": true,
+      "items": [
+        {
+          "name": "네이버",
+          "type": "open-street-map",
+          "url": "https://map.pstatic.net/nrb/styles/basic/1616668286",
+          "opacity": 1.0
+        },
+        {
+          "name": "네이버 (위성)",
+          "type": "open-street-map",
+          "url": "https://map.pstatic.net/nrb/styles/satellite/1616668286",
+          "opacity": 1.0
+        },
+        {
+          "name": "브이월드",
+          "type": "open-street-map",
+          "url": "https://xdworld.vworld.kr/2d/Base/service",
+          "fileExtension": "png",
+          "opacity": 1.0
+        },
+        {
+          "name": "브이월드 (위성)",
+          "type": "open-street-map",
+          "url": "https://xdworld.vworld.kr/2d/Satellite/service",
+          "fileExtension": "jpeg",
+          "opacity": 1.0
+        },
+        {
+          "name": "브이월드 (라벨)",
+          "type": "open-street-map",
+          "url": "https://xdworld.vworld.kr/2d/Hybrid/service",
+          "fileExtension": "png",
+          "opacity": 1.0
+        },
+        {
+          "name": "TEST topp_states",
+          "layer": "states",
+          "type": "mvt",
+          // "url": "http://localhost:8080/geoserver/geoserver/gwc/service/tms/1.0.0/topp:states@EPSG:900913@pbf",
+          // "url": "http://localhost:8080/geoserver/topp/gwc/service/tms/1.0.0/states@EPSG:900913@pbf/{z}/{x}/{-y}.pbf",
+          "url": "http://192.168.0.221:18080/geoserver/topp/gwc/service/tms/1.0.0/states@EPSG:900913@pbf/{z}/{x}/{-y}.pbf",
+          "opacity": 1.0, 
+          "treat404AsError": false
+        },
+        {
+          "name": "TEST TL_SPBD_BULD_all",
+          "layer": "TL_SPBD_BULD_all",
+          "type": "mvt",
+          "url": "http://192.168.0.221:18080/geoserver/geoserver/gwc/service/tms/1.0.0/TL_SPBD_BULD_all@EPSG:900913@pbf/{z}/{x}/{-y}.pbf",
+          "opacity": 1.0, 
+          "treat404AsError": false
+        }
+      ]
+    },
+    {
+      "name": "개인 데이터셋",
+      "type": "group",
+      "preserveOrder": true,
+      "isOpen": false,
+      "items": [
+        {
+          "name": "GeoServer (localhost)",
+          "type": "group",
+          "description": "내 지오서버",
+          "items": [{
+            "name": "WMS (All)",
+            "type": "wms-getCapabilities",
+            "url": "http://localhost:8080/geoserver/wms"
+          },{
+            "name": "WFS (All)",
+            "type": "wfs-getCapabilities",
+            "url": "http://localhost:8080/geoserver/wfs"
+          },{
+            "name": "WMS (geoserver)",
+            "type": "wms-getCapabilities",
+            "url": "http://localhost:8080/geoserver/geoserver/wms"
+          },{
+            "name": "WFS (geoserver)",
+            "type": "wfs-getCapabilities",
+            "url": "http://localhost:8080/geoserver/geoserver/wfs"
+          }]
+        }
+      ]
+    },
+    {
+      "name": "예제 데이터셋",
+      "type": "group",
+      "preserveOrder": true,
+      "isOpen": false,
       "items": [
         {
           "name": "Data.gov.au",

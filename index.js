@@ -23,12 +23,33 @@ import GnafSearchProviderViewModel from 'terriajs/lib/ViewModels/GnafSearchProvi
 import defined from 'terriajs-cesium/Source/Core/defined';
 import render from './lib/Views/render';
 
+// import {SwaggerUIBundle} from 'swagger-ui-dist';
+// import "css-loader!swagger-ui-react/swagger-ui.css"
+// import "swagger-ui/swagger-ui.css"
+
+// import swaggerSpec from 'js-yaml-loader!./lib/Docs/swagger-config.yaml';
+
+// import swaggerSpec from './lib/Docs/swagger-config.json';
+// import SwaggerUI from "swagger-ui"
+// SwaggerUI({
+//   // url: "https://petstore.swagger.io/v2/swagger.json",
+//   dom_id: '#swagger-ui',
+//   // presets: [
+//   //   SwaggerUIBundle.presets.apis,
+//   //   SwaggerUIBundle.SwaggerUIStandalonePreset
+//   // ],
+//   spec: swaggerSpec,
+//   // layout: "StandaloneLayout"
+// })
+
 // import createCatalogMemberFromType from 'terriajs/lib/Models/createCatalogMemberFromType';
 // import NaverStreetMapCatalogItem from './lib/Models/NaverMapCatalogItem';
+import MapboxVectorTileCatalogItem from './lib/Models/MapboxVectorTileCatalogItem';
 
 // i18n 한국어
 import i18next from 'i18next';
 import translationKr from './lib/Language/ko-KR/translation.json';
+import createCatalogMemberFromType from 'terriajs/lib/Models/createCatalogMemberFromType';
 i18next.addResourceBundle('ko-KR', 'translation', translationKr, true, true);
 
 // Register all types of catalog members in the core TerriaJS.  If you only want to register a subset of them
@@ -39,6 +60,7 @@ registerCatalogMembers();
 //   "naver-street-map",
 //   NaverStreetMapCatalogItem
 // );
+createCatalogMemberFromType.register("mvt", MapboxVectorTileCatalogItem);
 
 registerAnalytics();
 

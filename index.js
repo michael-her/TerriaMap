@@ -3,7 +3,7 @@
 /*global require,window */
 
 var terriaOptions = {
-    baseUrl: 'build/TerriaJS'
+    baseUrl: 'build/TerriaJS',
 };
 
 // checkBrowserCompatibility('ui');
@@ -22,6 +22,8 @@ import GazetteerSearchProviderViewModel from 'terriajs/lib/ViewModels/GazetteerS
 import GnafSearchProviderViewModel from 'terriajs/lib/ViewModels/GnafSearchProviderViewModel.js';
 import defined from 'terriajs-cesium/Source/Core/defined';
 import render from './lib/Views/render';
+
+// michael
 
 // import {SwaggerUIBundle} from 'swagger-ui-dist';
 // import "css-loader!swagger-ui-react/swagger-ui.css"

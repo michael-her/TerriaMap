@@ -23,6 +23,8 @@
         "gov.nz",
         "sample.aero3dpro.com.au",
         "map.pstatic.net"
+        // "192.168.0.221:18080",
+        // "192.168.0.221:28080"
     ]
 }
 

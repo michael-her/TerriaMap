@@ -1,0 +1,95 @@
+{
+  "layer": {
+    "id": "hty62yd",
+    "meta": "{bounds: Array(4)}",
+    "visConfigSettings": "{colorRange: {…}, filled: {…}, fixedRadius: {…}, op…}",
+    "config": {
+      "dataId": "earthquakes",
+      "label": "Point",
+      "color": [
+        218,
+        0,
+        0
+      ],
+      "columns": {
+        "lat": "{fieldIdx: 1, value: \"Latitude\"}",
+        "lng": "{fieldIdx: 2, value: \"Longitude\"}",
+        "altitude": "{fieldIdx: -1, optional: true, value: null}"
+      },
+      "isVisible": true,
+      "isConfigActive": true,
+      "highlightColor": [
+        252,
+        242,
+        26,
+        255
+      ],
+      "hidden": false,
+      "colorField": null,
+      "colorDomain": [
+        0,
+        1
+      ],
+      "colorScale": "quantile",
+      "sizeDomain": [
+        2.5,
+        7.39
+      ],
+      "sizeScale": "sqrt",
+      "sizeField": {
+        "name": "Magnitude",
+        "format": "",
+        "fieldIdx": 4,
+        "type": "real",
+        "analyzerType": "FLOAT",
+        "valueAccessor": "ƒ bound maybeToDate() {}"
+      },
+      "visConfig": {
+        "radius": 10,
+        "fixedRadius": false,
+        "opacity": 0.39,
+        "outline": false,
+        "thickness": 2,
+        "strokeColor": "[23, 184, 190]",
+        "colorRange": "{category: \"ColorBrewer\", colors: Array(6), name: \"…}",
+        "strokeColorRange": "{category: \"ColorBrewer\", colors: Array(6), name: \"…}",
+        "radiusRange": "[4.2, 96.2]",
+        "filled": true
+      },
+      "textLabel": [
+        "{alignment: \"center\", anchor: \"start\", color: Array…}"
+      ],
+      "colorUI": {
+        "color": "{colorRangeConfig: {…}, customPalette: {…}, showDro…}",
+        "colorRange": "{colorRangeConfig: {…}, customPalette: {…}, showDro…}"
+      },
+      "animation": {
+        "enabled": false
+      },
+      "strokeColorField": null,
+      "strokeColorDomain": [
+        0,
+        1
+      ],
+      "strokeColorScale": "quantile"
+    },
+    "getPositionAccessor": "ƒ () {}",
+    "_oldDataUpdateTriggers": "{getData: {…}, getLabelCharacterSet-0: null, getMet…}"
+  },
+  "fields": [
+    "{analyzerType: \"DATETIME\", fieldIdx: 0, filterProps…}",
+    "{analyzerType: \"FLOAT\", fieldIdx: 1, format: \"\", na…}",
+    "{analyzerType: \"FLOAT\", fieldIdx: 2, format: \"\", na…}",
+    "{analyzerType: \"FLOAT\", fieldIdx: 3, format: \"\", na…}",
+    "{analyzerType: \"FLOAT\", fieldIdx: 4, format: \"\", na…}",
+    "{analyzerType: \"STRING\", fieldIdx: 5, format: \"\", n…}",
+    "{analyzerType: \"INT\", fieldIdx: 6, format: \"\", name…}",
+    "{analyzerType: \"INT\", fieldIdx: 7, format: \"\", name…}",
+    "{analyzerType: \"INT\", fieldIdx: 8, format: \"\", name…}",
+    "{analyzerType: \"FLOAT\", fieldIdx: 9, format: \"\", na…}",
+    "{analyzerType: \"STRING\", fieldIdx: 10, format: \"\", …}",
+    "{analyzerType: \"INT\", fieldIdx: 11, format: \"\", nam…}"
+  ],
+  "onChange": "ƒ () {}",
+  "setColorUI": "ƒ () {}"
+}

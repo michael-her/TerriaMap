@@ -4,6 +4,7 @@
         "terria"
     ],
     "parameters": {
+        "bingMapsKey": "ArrEmGccdZGY48AnZqqOEDr_x67N1YXkdG6zaoNIOSGC_AWYTDrl-6z8BtZHLMri",
         "cesiumIonAccessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwYThkNjU5OC00ZWMwLTQ4YjctOTc3Mi1lMzkxNDQxM2Y1OGQiLCJpZCI6MzIzNSwiaWF0IjoxNTM2NTYwOTQ1fQ.6hTn29nQ_F1k4C7YpApgHbqm-51bNMZJHZ1_CdW2f5A",
         "googleUrlShortenerKey": null,
         "googleAnalyticsKey": null,
@@ -40,14 +41,14 @@
             link: "http://www.example.com"
         },*/
         // This is used in various text messages. You should also set <title> in index.html
-        "appName": "Terria Map",
+        "appName": "AccuInsight",
 
         // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
-        "brandBarElements": [
-            "",
-            "<a target=\"_blank\" href=\"https://terria.io\"><img src=\"images/terria_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>",
-            ""
-        ],
+        // "brandBarElements": [
+        //     "",
+        //     "<a target=\"_blank\" href=\"https://terria.io\"><img src=\"images/terria_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>",
+        //     ""
+        // ],
         // Shown when things go wrong.
         "supportEmail": "help@example.com",
         // You probably shouldn't change this.
@@ -75,6 +76,17 @@
         // True to display new feature popups.
         // "showFeaturePrompts": false,
 
+        // True to disable the "Centre map at your current location" button.
+        "disableMyLocation": true,
+
+        // True to use Cesium World Terrain from Cesium ion.
+        "useCesiumIonTerrain": true,
+
+        "storyEnabled": false,
+
+        "shareEnabled": false,
+
+        "helpEnabled": false
     }
 }
 

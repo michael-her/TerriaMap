@@ -274,7 +274,7 @@
     "resultsLabel": "검색 결과",
     "done": "완료",
     "data": "데이터",
-    "search": "데이터 카탈로그에서 '{{searchText}}' 검색합니다",
+    "search": "데이터 카탈로그에서 '{{searchText}}' 단어를 검색합니다",
     "viewLess": "View less {{name}} results",
     "viewMore": "View more {{name}} results",
     "placeholder": "위치 검색",
@@ -309,7 +309,7 @@
     "dataCustodian": "데이터 후원"
   },
   "description": {
-    "name": "설명",
+    "name": "Description",
     "dataLocal": "이 파일은 오직 브라우저에만 로드됩니다. 다른 사람에게 공유하기 위해서는 공중 웹서버에 업로드하세요.",
     "dataNotLocal": "사용 권한과 제약사항에 대한 추가적인 정보는 데이터 제공자에게 연락하세요.",
     "wms": "요청에 대한 지도 이미지를 생성하는 <1>웹 맵 서비스(WMS)</1>. 다음 URL을 통해 GIS 소프트웨어에서 사용할 수 있습니다:",
@@ -1119,5 +1119,47 @@
       "title": "Error loading Delta Tool",
       "message": "An error occurred while trying to load the delta tool from the server. Please try again."
     }
+  },
+  "layer": {
+    "basic": "기본",
+    "color": "색상",
+    "fillColor": "채움",
+    "strokeColor": "테두리",
+    "strokeWidth": "테두리 굵기",
+    "columns": {
+      "title": "칼럼"
+    },
+    "propertyBasedOn": "값 기반",
+    "required": "필수*",
+    "placeholder": {
+      "selectType": "타입을 선택하세요",
+      "selectField": "필드를 선택하세요"
+    },
+    "type": {
+      "raster": "래스터",
+      "open-street-map": "래스터",
+      "wms": "래스터",
+      "mvt": "벡터타일"
+    }
+  },
+  "layerVisConfigs": {
+    "opacity": "투명도",
+    "strokeWidth": "선 굵기"
+  },
+  "tooltip": {
+    "duplicateLayer": "레이어 복제",
+    "hideLayer": "레이어 숨기기",
+    "layerSettings": "레이어 설정",
+    "removeLayer": "레이어 삭제",
+    "showLayer": "레이어 보이기"
+  },
+  "layerConfiguration": {
+    "defaultDescription": ""
+  },
+  "placeholder": {
+    "selectField": "필드를 선택하세요"
+  },
+  "property": {
+    "color": "색상"
   }
 }

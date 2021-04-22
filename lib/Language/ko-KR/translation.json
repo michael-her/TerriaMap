@@ -1136,9 +1136,9 @@
       "selectField": "필드를 선택하세요"
     },
     "type": {
-      "raster": "래스터",
-      "open-street-map": "래스터",
-      "wms": "래스터",
+      "raster": "이미지타일",
+      "open-street-map": "이미지타일",
+      "wms": "이미지타일",
       "mvt": "벡터타일"
     }
   },
@@ -1157,9 +1157,17 @@
     "defaultDescription": ""
   },
   "placeholder": {
-    "selectField": "필드를 선택하세요"
+    "selectField": "필드를 선택하세요",
+    "search": "검색"
   },
   "property": {
-    "color": "색상"
+    "color": "채움",
+    "strokeColor": "테두리"
+  },
+  "color": {
+    "type": "타입",
+    "steps": "단계",
+    "reversed": "반전",
+    "customPalette": "색상 정의"
   }
 }

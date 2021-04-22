@@ -46,7 +46,7 @@ import render from './lib/Views/render';
 
 // import createCatalogMemberFromType from 'terriajs/lib/Models/createCatalogMemberFromType';
 // import NaverStreetMapCatalogItem from './lib/Models/NaverMapCatalogItem';
-import MapboxVectorTileCatalogItem from './lib/Models/MapboxVectorTileCatalogItem';
+// import MapboxVectorTileCatalogItem from './lib/Models/MapboxVectorTileCatalogItem';
 
 // i18n 한국어
 import i18next from 'i18next';
@@ -62,7 +62,7 @@ registerCatalogMembers();
 //   "naver-street-map",
 //   NaverStreetMapCatalogItem
 // );
-createCatalogMemberFromType.register("mvt", MapboxVectorTileCatalogItem);
+// createCatalogMemberFromType.register("mvt", MapboxVectorTileCatalogItem);
 
 registerAnalytics();
 
@@ -95,6 +95,7 @@ module.exports = terria.start({
     // as well as the call to "updateApplicationOnHashChange" further down.
     applicationUrl: window.location,
     configUrl: 'config.json',
+    defaultTo2D: true,
     shareDataService: new ShareDataService({
         terria: terria
     })
@@ -116,11 +117,11 @@ module.exports = terria.start({
         updateApplicationOnMessageFromParentWindow(terria, window);
 
         // Create the various base map options.
-        var createAustraliaBaseMapOptions = require('terriajs/lib/ViewModels/createAustraliaBaseMapOptions');
+        var createKoreanBaseMapOptions = require('terriajs/lib/ViewModels/createKoreanBaseMapOptions');
         var createGlobalBaseMapOptions = require('terriajs/lib/ViewModels/createGlobalBaseMapOptions');
         var selectBaseMap = require('terriajs/lib/ViewModels/selectBaseMap');
 
-        var australiaBaseMaps = createAustraliaBaseMapOptions(terria);
+        var australiaBaseMaps = createKoreanBaseMapOptions(terria);
         var globalBaseMaps = createGlobalBaseMapOptions(terria, terria.configParameters.bingMapsKey);
 
         var allBaseMaps = australiaBaseMaps.concat(globalBaseMaps);

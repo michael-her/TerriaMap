@@ -40,23 +40,23 @@ function isBrowserSupportedAV() {
 export default function UserInterface(props) {
   return (
     <StandardUserInterface {...props} version={version}>
-      <Menu>
-        {/* <RelatedMaps viewState={props.viewState} /> */}
-        {/* <MenuItem caption="정보" href="about.html" key="about-link" /> */}
-      </Menu>
-      <Nav>
-        {/* <MeasureTool terria={props.viewState.terria} key="measure-tool" /> */}
-      </Nav>
-      <ExperimentalMenu>
-        {/* <If condition={isBrowserSupportedAV()}>
+      {/* <Menu>
+        <RelatedMaps viewState={props.viewState} />
+        <MenuItem caption="정보" href="about.html" key="about-link" />
+      </Menu> */}
+      {/* <Nav>
+        <MeasureTool terria={props.viewState.terria} key="measure-tool" />
+      </Nav> */}
+      {/* <ExperimentalMenu>
+        <If condition={isBrowserSupportedAV()}>
           <SplitPoint
             loadComponent={loadAugmentedVirtuality}
             viewState={props.viewState}
             terria={props.viewState.terria}
             experimentalWarning={true}
           />
-        </If> */}
-      </ExperimentalMenu>
+        </If>
+      </ExperimentalMenu> */}
     </StandardUserInterface>
   );
 }

@@ -10898,14 +10898,15 @@ react-redux@^7.1.3:
     prop-types "^15.7.2"
     react-is "^16.13.1"
 
-react-responsive@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/react-responsive/-/react-responsive-5.0.0.tgz#b6e559b2ce8c4d82b0d47a7a78a74645b977e4af"
-  integrity sha512-oEimZ0FTCC3/pjGDEBHOz06nWbBNDIbMGOdRYp6K9SBUmrqgNAX77hTiqvmRQeLyI97zz4F4kiaFRxFspDxE+w==
+react-responsive@^8.0.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/react-responsive/-/react-responsive-8.2.0.tgz#e0ffb306cfd8f38c9c12e26725b9e1245fa9debc"
+  integrity sha512-iagCqVrw4QSjhxKp3I/YK6+ODkWY6G+YPElvdYKiUUbywwh9Ds0M7r26Fj2/7dWFFbOpcGnJE6uE7aMck8j5Qg==
   dependencies:
     hyphenate-style-name "^1.0.0"
     matchmediaquery "^0.3.0"
     prop-types "^15.6.1"
+    shallow-equal "^1.1.0"
 
 react-router-redux@^4.0.8:
   version "4.0.8"
@@ -11999,7 +12000,7 @@ shallow-clone@^3.0.0:
   dependencies:
     kind-of "^6.0.2"
 
-shallow-equal@^1.2.1:
+shallow-equal@^1.1.0, shallow-equal@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/shallow-equal/-/shallow-equal-1.2.1.tgz#4c16abfa56043aa20d050324efa68940b0da79da"
   integrity sha512-S4vJDjHHMBaiZuT9NPb616CSmLf618jawtv3sufLl6ivK8WocjAo58cXwbRV1cgqxH0Qbv+iUt6m05eqEa2IRA==

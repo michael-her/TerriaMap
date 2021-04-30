@@ -22,6 +22,7 @@ import GazetteerSearchProviderViewModel from 'terriajs/lib/ViewModels/GazetteerS
 import GnafSearchProviderViewModel from 'terriajs/lib/ViewModels/GnafSearchProviderViewModel.js';
 import defined from 'terriajs-cesium/Source/Core/defined';
 import render from './lib/Views/render';
+// import 'terriajs/lib/Core/knockout.mapping'
 
 // michael
 

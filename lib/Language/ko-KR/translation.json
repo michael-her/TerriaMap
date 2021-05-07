@@ -1169,5 +1169,8 @@
     "steps": "단계",
     "reversed": "반전",
     "customPalette": "색상 정의"
+  },
+  "scale": {
+    "strokeColorScale": "테두리 색상 스케일"
   }
 }

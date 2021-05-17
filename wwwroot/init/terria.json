@@ -61,7 +61,8 @@
           "metadataUrl": "http://192.168.0.221:18080/geoserver/geowave/wfs?service=wfs&version=2.0.0&request=DescribeFeatureType&typeName=geowave:LARD_ADM_SECT_SGG_11&outputFormat=application/json",
           // "opacity": 1.0,
           "maximumNativeZoom": 23,
-          "treat404AsError": false
+          "treat404AsError": false,
+          "idProperty": "GID"
         },
         {
           "name": "TEST 집계구 경계 (2.12.0)",
@@ -72,7 +73,7 @@
           // "opacity": 1.0, 
           "maximumNativeZoom": 23,
           "treat404AsError": false,
-          "idProperty": "OBJECTID"
+          "idProperty": "OBJECTID",
         },
         {
           "name": "TEST topp_states (2.12.0)",

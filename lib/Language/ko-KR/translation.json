@@ -1171,6 +1171,20 @@
     "customPalette": "색상 정의"
   },
   "scale": {
+    "colorScale": "채움 색상 스케일",
     "strokeColorScale": "테두리 색상 스케일"
+  },
+  "scaleFunction": {
+    "ordinal": "고유값",
+    "quantile": "백분위수",
+    "quantize": "양자화",
+    "linear": "선형변환",
+    "sqrt": "제곱근변환",
+    "log": "로그변환",
+    "point": "점형"
+  },
+  "alert": {
+    "slowPerformanceTitle": "급격한 성능저하 감지",
+    "slowperformanceMessage": "사용자 시스템이 3D 모드를 구동하기 충분하지만 현저한 성능 문제가 있습니다. 이 문제를 해소하기 위해 자동적으로 2D 모드로 전환합니다. 만약 3D 모드로 돌아가고 싶다면 화면 우상단의 지도 버튼을 눌러 옵션을 선택하십시오."
   }
 }

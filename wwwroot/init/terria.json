@@ -42,7 +42,7 @@
           "name": "브이월드 (라벨)",
           "type": "open-street-map",
           "url": "https://xdworld.vworld.kr/2d/Hybrid/service",
-          "fileExtension": "png",
+          "fileExtension": "png"
           // "opacity": 1.0
         }
       ]
@@ -54,11 +54,35 @@
       "isOpen": true,
       "items": [
         {
+          "name": "TEST 선박데이터 (2.12.0)",
+          "layer": "tb_track20140101_4326",
+          "type": "mvt",
+          "url": "http://192.168.0.221:18080/geoserver/gwc/service/tms/1.0.0/geowave:tb_track20140101_4326@EPSG:900913@pbf/{z}/{x}/{-y}.pbf",
+          "metadataUrl": "http://192.168.0.221:18080/geoserver/wfs?service=wfs&version=2.0.0&request=DescribeFeatureType&typeName=geowave:tb_track20140101_4326&outputFormat=application/json",
+          // "opacity": 1.0,
+          "maximumNativeZoom": 23,
+          "treat404AsError": false,
+          "idProperty": "rfid_id",
+          "forceProxy": true
+        },
+        {
+          "name": "TEST 전국도로망 (2.12.0)",
+          "layer": "gw_network_5179",
+          "type": "mvt",
+          "url": "http://192.168.0.221:18080/geoserver/gwc/service/tms/1.0.0/geowave:gw_network_5179@EPSG:900913@pbf/{z}/{x}/{-y}.pbf",
+          "metadataUrl": "http://192.168.0.221:18080/geoserver/wfs?service=wfs&version=2.0.0&request=DescribeFeatureType&typeName=geowave:gw_network_5179&outputFormat=application/json",
+          // "opacity": 1.0,
+          "maximumNativeZoom": 23,
+          "treat404AsError": false,
+          "idProperty": "id",
+          "forceProxy": true
+        },
+        {
           "name": "TEST 시군구 경계 서울 (2.12.0)",
           "layer": "LARD_ADM_SECT_SGG_11",
           "type": "mvt",
           "url": "http://192.168.0.221:18080/geoserver/gwc/service/tms/1.0.0/geowave:LARD_ADM_SECT_SGG_11@EPSG:900913@pbf/{z}/{x}/{-y}.pbf",
-          "metadataUrl": "http://192.168.0.221:18080/geoserver/geowave/wfs?service=wfs&version=2.0.0&request=DescribeFeatureType&typeName=geowave:LARD_ADM_SECT_SGG_11&outputFormat=application/json",
+          "metadataUrl": "http://192.168.0.221:18080/geoserver/wfs?service=wfs&version=2.0.0&request=DescribeFeatureType&typeName=geowave:LARD_ADM_SECT_SGG_11&outputFormat=application/json",
           // "opacity": 1.0,
           "maximumNativeZoom": 23,
           "treat404AsError": false,
@@ -69,7 +93,7 @@
           "layer": "Z_SOP_BND_TOTAL_OA_PG",
           "type": "mvt",
           "url": "http://192.168.0.221:18080/geoserver/gwc/service/tms/1.0.0/geowave:Z_SOP_BND_TOTAL_OA_PG@EPSG:900913@pbf/{z}/{x}/{-y}.pbf",
-          "metadataUrl": "http://192.168.0.221:18080/geoserver/geowave/wfs?service=wfs&version=2.0.0&request=DescribeFeatureType&typeName=geowave:Z_SOP_BND_TOTAL_OA_PG&outputFormat=application/json",
+          "metadataUrl": "http://192.168.0.221:18080/geoserver/wfs?service=wfs&version=2.0.0&request=DescribeFeatureType&typeName=geowave:Z_SOP_BND_TOTAL_OA_PG&outputFormat=application/json",
           // "opacity": 1.0, 
           "maximumNativeZoom": 23,
           "treat404AsError": false,
@@ -104,7 +128,15 @@
       ]
     },
     {
-      "name": "개인 데이터셋",
+      "name": "지오웨이브",
+      "type": "geowave",
+      "description": "개발서버 (220)",
+      // "url": "http://192.168.0.40:8090"
+      "url": "http://192.168.0.220:8090",
+      "forceProxy": true
+    },
+    {
+      "name": "지오서버",
       "type": "group",
       "preserveOrder": true,
       "isOpen": false,

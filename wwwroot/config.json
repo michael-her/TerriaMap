@@ -86,7 +86,10 @@
 
         "shareEnabled": false,
 
-        "helpEnabled": false
+        "helpEnabled": false,
+
+        // michael
+        "searchEnabled": false
     }
 }
 

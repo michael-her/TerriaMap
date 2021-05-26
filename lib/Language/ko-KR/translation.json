@@ -1147,7 +1147,8 @@
       "raster": "이미지타일",
       "open-street-map": "이미지타일",
       "wms": "이미지타일",
-      "mvt": "벡터타일"
+      "mvt": "벡터타일",
+      "gw-mvt": "벡터타일"
     }
   },
   "layerVisConfigs": {

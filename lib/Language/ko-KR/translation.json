@@ -1178,7 +1178,10 @@
     "type": "타입",
     "steps": "단계",
     "reversed": "반전",
-    "customPalette": "색상 정의"
+    "customPalette": "색상 정의",
+    "addStep": "+ 단계 추가",
+    "confirm": "확인",
+    "cancel": "취소"
   },
   "scale": {
     "colorScale": "채움 색상 스케일",

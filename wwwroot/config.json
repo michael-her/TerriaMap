@@ -80,7 +80,9 @@
         "disableMyLocation": true,
 
         // True to use Cesium World Terrain from Cesium ion.
-        "useCesiumIonTerrain": true,
+        "useCesiumIonTerrain": false, // true,
+        "cesiumTerrainUrl": "http://192.168.0.221:9998/tilesets/korea_dem",
+        "hideTerriaLogo": true,
 
         "storyEnabled": false,
 
@@ -89,7 +91,10 @@
         "helpEnabled": false,
 
         // michael
-        "searchEnabled": false
+        "searchEnabled": false,
+        "maximumLeafletZoomLevel": 30,
+        "refreshToolEnabled": true,
+        "hideAllCredit": true
     }
 }
 

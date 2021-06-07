@@ -24,7 +24,6 @@
     "redux-promise": "^0.6.0",
     "redux-thunk": "^1.0.0",
     "swagger-ui": "^3.45.1",
-    "terriajs-server": "^3.0.1",
     "yaml-loader": "^0.6.0"
   },
   "config": {

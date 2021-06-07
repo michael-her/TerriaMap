@@ -20,6 +20,9 @@
     "originError": "사용중인 브라우저는 HTTPS 통신을 사용할 때만 위치를 제공할 수 있습니다. {{secureUrl}} 를 통해 연결할 수 있습니다.",
     "centreMap": "내 위치를 맵 중앙으로 이동"
   },
+  "mapLegendPanel": {
+    "header": "레이어 범례"
+  },
   "splitterTool": {
     "toggleSplitterTool": "데이터셋의 창-분할 비교 켜기",
     "title": "뷰를 조정하려면 왼쪽이나 오른쪽으로 드래그",
@@ -1162,7 +1165,8 @@
     "hideLayer": "레이어 숨기기",
     "layerSettings": "레이어 설정",
     "removeLayer": "레이어 삭제",
-    "showLayer": "레이어 보이기"
+    "showLayer": "레이어 보이기",
+    "showLegend": "범례 보이기"
   },
   "layerConfiguration": {
     "defaultDescription": ""

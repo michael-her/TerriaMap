@@ -115,6 +115,9 @@ module.exports = terria.start({
 
         // Automatically update Terria (load new catalogs, etc.) when the hash part of the URL changes.
         updateApplicationOnHashChange(terria, window);
+        // TerriaJS can be configured to accept messages posted to it by its parent window.
+        // This is useful when embedding a TerriaJS app in an iframe and when the parent wants to send more data to the embedded app
+        // than can be reasonably included in a URL.
         updateApplicationOnMessageFromParentWindow(terria, window);
 
         // Create the various base map options.

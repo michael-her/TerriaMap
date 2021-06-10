@@ -3330,13 +3330,6 @@ collection-visit@^1.0.0:
     map-visit "^1.0.0"
     object-visit "^1.0.0"
 
-collections@^5.1.12:
-  version "5.1.12"
-  resolved "https://registry.yarnpkg.com/collections/-/collections-5.1.12.tgz#270f6c26ddc2930734ae6cc19ad4e8fb412af739"
-  integrity sha512-7WV0gdGlQFHjB//+/5JW4CdMnOlf7fWMMeM3EWvuao7RbK0MeFS01bZOgWmIH5DHDejSutf455QUZ56ZjjROXw==
-  dependencies:
-    weak-map "~1.0.x"
-
 color-convert@^1.9.0:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-1.9.3.tgz#bb71850690e1f136567de629d2d5471deda4c1e8"
@@ -13378,6 +13371,11 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
   integrity sha1-WuaBd/GS1EViadEIr6k/+HQ/T2Q=
 
+twkb@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/twkb/-/twkb-0.2.2.tgz#8c9f0c51d35f207bcd2706e40e771083fd786f19"
+  integrity sha512-hDHDEZ0xVGXD/VHuWFF2OzkVqwLW6u8xR2vlMItAKzk2R/nntpEVjchOG8gxH8o+buvFazn35KGAUavz8jTR0w==
+
 type-analyzer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/type-analyzer/-/type-analyzer-0.3.0.tgz#b62a226deb4e9ca46b8cc86e14a93344154377d0"
@@ -13995,11 +13993,6 @@ wd@^1.4.0:
     q "^1.5.1"
     request "2.88.0"
     vargs "^0.1.0"
-
-weak-map@~1.0.x:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/weak-map/-/weak-map-1.0.5.tgz#79691584d98607f5070bd3b70a40e6bb22e401eb"
-  integrity sha1-eWkVhNmGB/UHC9O3CkDmuyLkAes=
 
 web-streams-polyfill@^3.0.0:
   version "3.0.2"

@@ -595,6 +595,21 @@
     }
   },
   "models": {
+    "gwTwkb": {
+      "name": "TWKB",
+      "dataSourceErrorMessage": "This data source does not have any details available.",
+      "serviceErrorMessage": "This service does not have any details available.",
+      "errorLoadingTitle": "Error loading GeoJSON",
+      "errorParsingMessage": "An error occurred parsing the provided data as JSON.  This may indicate that the file is invalid or that it is not supported by {{appName}}. If you would like assistance or further information, please email us at {{email}}",
+      "errorLoadingMessage": "An error occurred while loading a GeoJSON file.  This may indicate that the file is invalid or that it is not supported by {{appName}}. If you would like assistance or further information, please email us at {{email}}",
+      "couldNotLoadTitle": "Could not load JSON",
+      "couldNotLoadMessage": "An error occurred while retrieving JSON data from the provided link. <p>If you entered the link manually, please verify that the link is correct.</p><p>This error may also indicate that the server does not support {{cors}}.  If this is your server, verify that CORS is enabled and enable it if it is not.  If you do not control the server, please contact the administrator of the server and ask them to enable CORS.  Or, contact the '{{appName}}' team by emailing {{email}} and ask us to add this server to the list of non-CORS-supporting servers that may be proxied by 'appName' itself. <p>If you did not enter this link manually, this error may indicate that the data source you're trying to add is temporarily unavailable or there is a problem with your internet connection.  Try adding the data source again, and if the problem persists, please report it by sending an email to {{email}}.</p>",
+      "unsupportedBrowserTitle": "Unsupported web browser",
+      "unsupportedBrowserMessage": "Sorry, your web browser does not support the File API, which {{appName}} requires in order to load this dataset.  Please upgrade your web browser.  For the best experience, we recommend the latest versions of {{chrome}} or {{firefox}} or {{internetExplorer}}.",
+      "internetExplorer": "Internet Explorer 11",
+      "chrome": "Google Chrome",
+      "firefox": "Mozilla Firefox"
+    },
     "GeowaveCatalogGroup": {
       "webServer": "지오웨이브 서버",
       "invalidWMSServerTitle": "Invalid WMS server",
@@ -1158,9 +1173,9 @@
   },
   "layerVisConfigs": {
     "opacity": "투명도",
-    "strokeWidth": "선 굵기",
+    "strokeWidth": "테두리 굵기",
     "radiusRange": "값 범위",
-    "strokeWidthRange": "선 굵기"
+    "strokeWidthRange": "테두리 굵기"
   },
   "tooltip": {
     "duplicateLayer": "레이어 복제",
@@ -1180,7 +1195,8 @@
   "property": {
     "color": "채움",
     "strokeColor": "테두리",
-    "radius": "점 크기"
+    "radius": "점 크기",
+    "stroke": "테두리"
   },
   "color": {
     "type": "타입",

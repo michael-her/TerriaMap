@@ -91,7 +91,7 @@
         "helpEnabled": false,
 
         // 데이터셋의 창-분할 비교 켜기
-        "disableSplitter": false,
+        "disableSplitter": true,
 
         // michael
         "searchEnabled": false,

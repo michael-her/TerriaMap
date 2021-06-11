@@ -51,7 +51,7 @@
     {
       "name": "GeoWave",
       "type": "geowave",
-      "description": "개발서버 (220)",
+      "description": "분석 클러스터를 선택하세요.",
       // "url": "http://192.168.0.40:8090"
       // "url": "http://192.168.0.220:8090",
       "forceProxy": true

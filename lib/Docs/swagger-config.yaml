@@ -1,0 +1,41 @@
+openapi: "3.0.0"
+#info:
+#  version: "0.0.1"
+#  title: "Swagger UI Webpack Setup"
+#  description: "Demonstrates Swagger UI with Webpack including CSS and OAuth"
+servers:
+  - url: "http://localhost:3001/api"
+    description: "Spacetime API"
+  - url: "http://localhost:8080/geoserver/"
+    description: "GeoServer API"
+# components:
+#   securitySchemes:
+#     # See https://demo.identityserver.io/ for configuration details.
+#     identity_server_auth:
+#       type: oauth2
+#       flows:
+#         implicit:
+#           authorizationUrl: "https://demo.identityserver.io/connect/authorize"
+#           scopes:
+#             api: "api"
+# security:
+#   - identity_server_auth:
+#     - api
+paths:
+  /layers/{layerId}:
+    get:
+      tags: ["layer"]
+      summary: "request layer assets"
+      description: ""
+      parameters: [{
+        name: "layerId"
+        in: "path"
+        
+      }]
+      responses:
+        404:
+          description: "페이지 없음"
+        401:
+          description: "권한 없음"
+        200:
+          description: "OK"

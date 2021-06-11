@@ -1,16 +1,201 @@
 {
   "homeCamera": {
-    "north": -8,
-    "east": 158,
-    "south": -45,
-    "west": 109
+    "north": 38,
+    "east": 131,
+    "south": 35,
+    "west": 127
   },
   "catalog": [
     {
-      "name": "Example Datasets",
+      "name": "배경지도",
       "type": "group",
       "preserveOrder": true,
       "isOpen": true,
+      "items": [
+        // {
+        //   "name": "네이버",
+        //   "type": "open-street-map",
+        //   "url": "https://map.pstatic.net/nrb/styles/basic/1616668286",
+        //   "opacity": 1.0
+        // },
+        // {
+        //   "name": "네이버 (위성)",
+        //   "type": "open-street-map",
+        //   "url": "https://map.pstatic.net/nrb/styles/satellite/1616668286",
+        //   "opacity": 1.0
+        // },
+        // {
+        //   "name": "브이월드",
+        //   "type": "open-street-map",
+        //   "url": "https://xdworld.vworld.kr/2d/Base/service",
+        //   "fileExtension": "png",
+        //   "opacity": 1.0
+        // },
+        // {
+        //   "name": "브이월드 (위성)",
+        //   "type": "open-street-map",
+        //   "url": "https://xdworld.vworld.kr/2d/Satellite/service",
+        //   "fileExtension": "jpeg",
+        //   "opacity": 1.0
+        // },
+        {
+          "name": "브이월드 (라벨)",
+          "type": "open-street-map",
+          "url": "https://xdworld.vworld.kr/2d/Hybrid/service",
+          "fileExtension": "png",
+          "maximumNativeZoom": 19
+          // "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "GeoWave",
+      "type": "geowave",
+      "description": "개발서버 (220)",
+      // "url": "http://192.168.0.40:8090"
+      // "url": "http://192.168.0.220:8090",
+      "forceProxy": true
+    },
+    {
+      "name": "테스트",
+      "type": "group",
+      "preserveOrder": true,
+      "isOpen": true,
+      "items": [
+        {
+          "name": "TEST 선박데이터 (2.12.0)",
+          "layer": "geowave:tb_track20140101_4326",
+          "type": "gw-mvt",
+          "url": "http://192.168.0.221:18080/geoserver/gwc/service/tms/1.0.0/geowave:tb_track20140101_4326@EPSG:900913@pbf/{z}/{x}/{-y}.pbf",
+          // "metadataUrl": "http://192.168.0.221:18080/geoserver/wfs?service=wfs&version=2.0.0&request=DescribeFeatureType&typeName=geowave:tb_track20140101_4326&outputFormat=application/json",
+          // "opacity": 1.0,
+          "maximumNativeZoom": 20,
+          "treat404AsError": false,
+          "idProperty": "rfid_id",
+          "forceProxy": true
+        },
+        {
+          "name": "TEST 전국도로망 (2.12.0)",
+          "layer": "geowave:gw_network_5179",
+          "type": "gw-mvt",
+          "url": "http://192.168.0.221:18080/geoserver/gwc/service/tms/1.0.0/geowave:gw_network_5179@EPSG:900913@pbf/{z}/{x}/{-y}.pbf",
+          // "metadataUrl": "http://192.168.0.221:18080/geoserver/wfs?service=wfs&version=2.0.0&request=DescribeFeatureType&typeName=geowave:gw_network_5179&outputFormat=application/json",
+          // "opacity": 1.0,
+          "maximumNativeZoom": 20,
+          "treat404AsError": false,
+          "idProperty": "id",
+          "forceProxy": true
+        },
+        {
+          "name": "TEST 시군구 경계 서울 (2.12.0)",
+          "layer": "geowave:LARD_ADM_SECT_SGG_11",
+          "type": "gw-mvt",
+          "url": "http://192.168.0.221:18080/geoserver/gwc/service/tms/1.0.0/geowave:LARD_ADM_SECT_SGG_11@EPSG:900913@pbf/{z}/{x}/{-y}.pbf",
+          // "metadataUrl": "http://192.168.0.221:18080/geoserver/wfs?service=wfs&version=2.0.0&request=DescribeFeatureType&typeName=geowave:LARD_ADM_SECT_SGG_11&outputFormat=application/json",
+          // "opacity": 1.0,
+          "maximumNativeZoom": 20,
+          "treat404AsError": false,
+          "idProperty": "GID",
+          "forceProxy": true
+        },
+        {
+          "name": "TEST 집계구 경계 (2.12.0)",
+          "layer": "geowave:Z_SOP_BND_TOTAL_OA_PG",
+          "type": "gw-mvt",
+          "url": "http://192.168.0.221:18080/geoserver/gwc/service/tms/1.0.0/geowave:Z_SOP_BND_TOTAL_OA_PG@EPSG:900913@pbf/{z}/{x}/{-y}.pbf",
+          // "metadataUrl": "http://192.168.0.221:18080/geoserver/wfs?service=wfs&version=2.0.0&request=DescribeFeatureType&typeName=geowave:Z_SOP_BND_TOTAL_OA_PG&outputFormat=application/json",
+          // "opacity": 1.0, 
+          "maximumNativeZoom": 20,
+          "treat404AsError": false,
+          "idProperty": "OBJECTID",
+          "forceProxy": true
+        },
+        {
+          "name": "TEST topp_states (2.12.0)",
+          "layer": "topp:states",
+          "type": "gw-mvt",
+          "url": "http://192.168.0.221:18080/geoserver/gwc/service/tms/1.0.0/topp:states@EPSG:900913@pbf/{z}/{x}/{-y}.pbf",
+          // "metadataUrl": "http://192.168.0.221:18080/geoserver/wfs?service=wfs&version=2.0.0&request=DescribeFeatureType&typeName=topp:states&outputFormat=application/json",
+          "maximumNativeZoom": 20,
+          "opacity": 1.0, 
+          "treat404AsError": false,
+          "forceProxy": true
+        },
+        // {
+        //   "name": "TEST topp_states (2.17.2)",
+        //   "layer": "states",
+        //   "type": "gw-mvt",
+        //   // "url": "http://localhost:8080/geoserver/geoserver/gwc/service/tms/1.0.0/topp:states@EPSG:900913@pbf",
+        //   // "url": "http://localhost:8080/geoserver/topp/gwc/service/tms/1.0.0/states@EPSG:900913@pbf/{z}/{x}/{-y}.pbf",
+        //   "url": "http://192.168.0.221:18080/geoserver/gwc/service/tms/1.0.0/states@EPSG:900913@pbf/{z}/{x}/{-y}.pbf",
+        //   "metadataUrl": "http://192.168.0.221:18080/geoserver/wfs?service=wfs&version=2.0.0&request=DescribeFeatureType&typeName=topp:states&outputFormat=application/json",
+        //   "opacity": 1.0, 
+        //   "treat404AsError": false,
+        //   "forceProxy": true
+        // },
+        // {
+        //   "name": "TEST TL_SPBD_BULD_all",
+        //   "layer": "TL_SPBD_BULD_all",
+        //   "type": "gs-mvt",
+        //   "url": "http://192.168.0.221:28080/geoserver/gwc/service/tms/1.0.0/geoserver:TL_SPBD_BULD_all@EPSG:900913@pbf/{z}/{x}/{-y}.pbf",
+        //   "metadataUrl": "http://192.168.0.221:28080/geoserver/wfs?service=wfs&version=2.0.0&request=DescribeFeatureType&typeName=geoserver:TL_SPBD_BULD_all&outputFormat=application/json",
+        //   "opacity": 1.0, 
+        //   "treat404AsError": false,
+        //   "forceProxy": true
+        // }
+      ]
+    },
+    {
+      "name": "지오서버",
+      "type": "group",
+      "preserveOrder": true,
+      "isOpen": false,
+      "items": [
+        {
+          "name": "GeoServer (221)",
+          "type": "group",
+          "description": "개발 지오서버",
+          "items": [{
+            "name": "WMS (All)",
+            "type": "wms-getCapabilities",
+            "url": "http://192.168.0.221:18080/geoserver/wms"
+            // "forceProxy": true
+          },{
+            "name": "WFS (All)",
+            "type": "wfs-getCapabilities",
+            "url": "http://192.168.0.221:18080/geoserver/wfs"
+            // "forceProxy": true
+          }]
+        },
+        {
+          "name": "GeoServer (localhost)",
+          "type": "group",
+          "description": "내 지오서버",
+          "items": [{
+            "name": "WMS (All)",
+            "type": "wms-getCapabilities",
+            "url": "http://localhost:8080/geoserver/wms"
+          },{
+            "name": "WFS (All)",
+            "type": "wfs-getCapabilities",
+            "url": "http://localhost:8080/geoserver/wfs"
+          },{
+            "name": "WMS (geoserver)",
+            "type": "wms-getCapabilities",
+            "url": "http://localhost:8080/geoserver/geoserver/wms"
+          },{
+            "name": "WFS (geoserver)",
+            "type": "wfs-getCapabilities",
+            "url": "http://localhost:8080/geoserver/geoserver/wfs"
+          }]
+        }
+      ]
+    },
+    {
+      "name": "예제 데이터셋",
+      "type": "group",
+      "preserveOrder": true,
+      "isOpen": false,
       "items": [
         {
           "name": "Data.gov.au",

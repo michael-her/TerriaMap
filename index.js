@@ -3,7 +3,7 @@
 /*global require,window */
 
 var terriaOptions = {
-    baseUrl: 'build/TerriaJS'
+    baseUrl: 'build/TerriaJS',
 };
 
 // checkBrowserCompatibility('ui');
@@ -22,11 +22,49 @@ import GazetteerSearchProviderViewModel from 'terriajs/lib/ViewModels/GazetteerS
 import GnafSearchProviderViewModel from 'terriajs/lib/ViewModels/GnafSearchProviderViewModel.js';
 import defined from 'terriajs-cesium/Source/Core/defined';
 import render from './lib/Views/render';
+// import 'terriajs/lib/Core/knockout.mapping'
+
+// michael
+
+// import {SwaggerUIBundle} from 'swagger-ui-dist';
+// import "css-loader!swagger-ui-react/swagger-ui.css"
+// import "swagger-ui/swagger-ui.css"
+
+// import swaggerSpec from 'js-yaml-loader!./lib/Docs/swagger-config.yaml';
+
+// import swaggerSpec from './lib/Docs/swagger-config.json';
+// import SwaggerUI from "swagger-ui"
+// SwaggerUI({
+//   // url: "https://petstore.swagger.io/v2/swagger.json",
+//   dom_id: '#swagger-ui',
+//   // presets: [
+//   //   SwaggerUIBundle.presets.apis,
+//   //   SwaggerUIBundle.SwaggerUIStandalonePreset
+//   // ],
+//   spec: swaggerSpec,
+//   // layout: "StandaloneLayout"
+// })
+
+// import createCatalogMemberFromType from 'terriajs/lib/Models/createCatalogMemberFromType';
+// import NaverStreetMapCatalogItem from './lib/Models/NaverMapCatalogItem';
+// import MapboxVectorTileCatalogItem from './lib/Models/MapboxVectorTileCatalogItem';
+
+// i18n 한국어
+import i18next from 'i18next';
+import translationKr from './lib/Language/ko-KR/translation.json';
+import createCatalogMemberFromType from 'terriajs/lib/Models/createCatalogMemberFromType';
+i18next.addResourceBundle('ko-KR', 'translation', translationKr, true, true);
 
 // Register all types of catalog members in the core TerriaJS.  If you only want to register a subset of them
 // (i.e. to reduce the size of your application if you don't actually use them all), feel free to copy a subset of
 // the code in the registerCatalogMembers function here instead.
 registerCatalogMembers();
+// createCatalogMemberFromType.register(
+//   "naver-street-map",
+//   NaverStreetMapCatalogItem
+// );
+// createCatalogMemberFromType.register("mvt", MapboxVectorTileCatalogItem);
+
 registerAnalytics();
 
 terriaOptions.analytics = new GoogleAnalytics();
@@ -58,6 +96,7 @@ module.exports = terria.start({
     // as well as the call to "updateApplicationOnHashChange" further down.
     applicationUrl: window.location,
     configUrl: 'config.json',
+    defaultTo2D: true,
     shareDataService: new ShareDataService({
         terria: terria
     })
@@ -76,18 +115,22 @@ module.exports = terria.start({
 
         // Automatically update Terria (load new catalogs, etc.) when the hash part of the URL changes.
         updateApplicationOnHashChange(terria, window);
+        // TerriaJS can be configured to accept messages posted to it by its parent window.
+        // This is useful when embedding a TerriaJS app in an iframe and when the parent wants to send more data to the embedded app
+        // than can be reasonably included in a URL.
         updateApplicationOnMessageFromParentWindow(terria, window);
 
         // Create the various base map options.
-        var createAustraliaBaseMapOptions = require('terriajs/lib/ViewModels/createAustraliaBaseMapOptions');
+        var createKoreanBaseMapOptions = require('terriajs/lib/ViewModels/createKoreanBaseMapOptions');
         var createGlobalBaseMapOptions = require('terriajs/lib/ViewModels/createGlobalBaseMapOptions');
         var selectBaseMap = require('terriajs/lib/ViewModels/selectBaseMap');
 
-        var australiaBaseMaps = createAustraliaBaseMapOptions(terria);
+        // michael
+        var koreanBaseMaps = createKoreanBaseMapOptions(terria);
         var globalBaseMaps = createGlobalBaseMapOptions(terria, terria.configParameters.bingMapsKey);
 
-        var allBaseMaps = australiaBaseMaps.concat(globalBaseMaps);
-        selectBaseMap(terria, allBaseMaps, 'Bing Maps Aerial with Labels', true);
+        var allBaseMaps = koreanBaseMaps.concat(globalBaseMaps);
+        selectBaseMap(terria, allBaseMaps, 'Dark Matter' /*'Bing Maps Aerial with Labels'*/, true);
 
         // Show a modal disclaimer before user can do anything else.
         if (defined(terria.configParameters.globalDisclaimer)) {

@@ -9,10 +9,18 @@ import PropTypes from "prop-types";
 import React from "react";
 import RelatedMaps from "./RelatedMaps";
 import SplitPoint from "terriajs/lib/ReactViews/SplitPoint";
-import StandardUserInterface from "terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface.jsx";
+// import StandardUserInterface from "terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface.jsx";
 import version from "../../version";
 
 import "./global.scss";
+import { default as MyWorkbenchItemFactory } from "terriajs/lib/Components/side-panel/layer-panel/layer-panel";
+// import {default as MyWorkbenchItemFactory} from "../Components/Workbench/WorkbenchItem";
+import WorkbenchItemFactory from "terriajs/lib/ReactViews/Workbench/WorkbenchItem";
+
+// michael
+const StandardUserInterface = require("terriajs/lib/Components/container").injectComponents(
+  [[WorkbenchItemFactory, MyWorkbenchItemFactory]]
+);
 
 function loadAugmentedVirtuality(callback) {
   require.ensure(
@@ -32,14 +40,14 @@ function isBrowserSupportedAV() {
 export default function UserInterface(props) {
   return (
     <StandardUserInterface {...props} version={version}>
-      <Menu>
+      {/* <Menu>
         <RelatedMaps viewState={props.viewState} />
-        <MenuItem caption="About" href="about.html" key="about-link" />
-      </Menu>
-      <Nav>
+        <MenuItem caption="정보" href="about.html" key="about-link" />
+      </Menu> */}
+      {/* <Nav>
         <MeasureTool terria={props.viewState.terria} key="measure-tool" />
-      </Nav>
-      <ExperimentalMenu>
+      </Nav> */}
+      {/* <ExperimentalMenu>
         <If condition={isBrowserSupportedAV()}>
           <SplitPoint
             loadComponent={loadAugmentedVirtuality}
@@ -48,7 +56,7 @@ export default function UserInterface(props) {
             experimentalWarning={true}
           />
         </If>
-      </ExperimentalMenu>
+      </ExperimentalMenu> */}
     </StandardUserInterface>
   );
 }

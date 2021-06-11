@@ -1,17 +1,19 @@
 {
     /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
-    initializationUrls: [
+    "initializationUrls": [
         "terria"
     ],
-    parameters: {
-        googleUrlShortenerKey: null,
-        googleAnalyticsKey: null,
-        googleAnalyticsOptions: null,
+    "parameters": {
+        "bingMapsKey": "ArrEmGccdZGY48AnZqqOEDr_x67N1YXkdG6zaoNIOSGC_AWYTDrl-6z8BtZHLMri",
+        "cesiumIonAccessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwYThkNjU5OC00ZWMwLTQ4YjctOTc3Mi1lMzkxNDQxM2Y1OGQiLCJpZCI6MzIzNSwiaWF0IjoxNTM2NTYwOTQ1fQ.6hTn29nQ_F1k4C7YpApgHbqm-51bNMZJHZ1_CdW2f5A",
+        "googleUrlShortenerKey": null,
+        "googleAnalyticsKey": null,
+        "googleAnalyticsOptions": null,
         /* Text that appears at the bottom of the map */
-        disclaimer: {
-            text: "Disclaimer: This map must not be used for navigation or precise spatial analysis",
-            url: ""
-        },
+        // "disclaimer": {
+        //     "text": "Disclaimer: This map must not be used for navigation or precise spatial analysis",
+        //     "url": ""
+        // },
         /*
         // Text that will be added to any pages printed from your site.
         printDisclaimer:{
@@ -39,24 +41,25 @@
             link: "http://www.example.com"
         },*/
         // This is used in various text messages. You should also set <title> in index.html
-        appName: "Terria Map",
+        "appName": "Geowave",
 
         // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
-        brandBarElements: [
-            "",
-            "<a target=\"_blank\" href=\"https://terria.io\"><img src=\"images/terria_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>",
-            ""
-        ],
+        // "brandBarElements": [
+        //     "",
+        //     "<a target=\"_blank\" href=\"https://terria.io\"><img src=\"images/terria_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>",
+        //     ""
+        // ],
         // Shown when things go wrong.
-        supportEmail: "help@example.com",
+        "supportEmail": "help@example.com",
         // You probably shouldn't change this.
-        proj4ServiceBaseUrl: "proj4def/",
+        "proj4ServiceBaseUrl": "proj4def/",
         // Or this
-        feedbackUrl: "feedback",
+        // Feedback turn On/Off
+        // "feedbackUrl": "feedback",
 
         // Default mobile viewer mode when loading the map for the first time on mobile platforms.
         // Options are: "3DTerrain", "3DSmooth", "2D"
-        mobileDefaultViewerMode: "2d",
+        "mobileDefaultViewerMode": "2d",
         // Enable experimental features, since its nice to have the bleeding edge.
         // Disable it if things go wrong with the experimental features or your users aren't robust to features which might change or disapear completly.
         "experimentalFeatures": true,
@@ -73,6 +76,29 @@
         // True to display new feature popups.
         // "showFeaturePrompts": false,
 
+        // True to disable the "Centre map at your current location" button.
+        "disableMyLocation": true,
+
+        // True to use Cesium World Terrain from Cesium ion.
+        "useCesiumIonTerrain": false, // true,
+        "cesiumTerrainUrl": "http://192.168.0.221:9998/tilesets/korea_dem",
+        "hideTerriaLogo": true,
+
+        "storyEnabled": false,
+
+        "shareEnabled": false,
+
+        "helpEnabled": false,
+
+        // 데이터셋의 창-분할 비교 켜기
+        "disableSplitter": false,
+
+        // michael
+        "searchEnabled": false,
+        "maximumLeafletZoomLevel": 20, // max 30
+        "minimumZoomDistance": 160, // default 1.0
+        "refreshToolEnabled": true,
+        "hideAllCredit": true
     }
 }
 

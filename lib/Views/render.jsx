@@ -2,13 +2,85 @@ import ReactDOM from "react-dom";
 import RedBox from "redbox-react";
 import React from "react";
 
+import { Provider } from "react-redux";
+import { browserHistory, Router, Route } from "react-router";
+import { syncHistoryWithStore } from "react-router-redux";
+
+import styled, { ThemeProvider } from "styled-components";
+import { theme } from "terriajs/lib/Styles";
+
+import store from "./store";
+
+const history = syncHistoryWithStore(browserHistory, store);
+
+// const appRoute = buildAppRoutes(App);
+
+const terriaGetState = state => state.app.keplerGl;
+
+const GlobalStyle = styled.div`
+  font-family: ff-clan-web-pro, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 0.875em;
+  line-height: 1.71429;
+
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: ${props => props.theme.labelColor};
+  }
+`;
+
 export default function renderUi(terria, allBaseMaps, viewState) {
   let render = () => {
     const UI = require("./UserInterface").default;
-    ReactDOM.render(
-      <UI terria={terria} allBaseMaps={allBaseMaps} viewState={viewState} />,
-      document.getElementById("ui")
+    // michael
+    const Root = () => (
+      <Provider store={store}>
+        <ThemeProvider theme={theme}>
+          {/* <GlobalStyle
+            // this is to apply the same modal style as kepler.gl core
+            // because styled-components doesn't always return a node
+            // https://github.com/styled-components/styled-components/issues/617
+            ref={node => {
+              node ? (this.root = node) : null;
+            }}
+          > */}
+          <UI
+            terria={terria}
+            getState={terriaGetState}
+            allBaseMaps={allBaseMaps}
+            viewState={viewState}
+          />
+          {/* </GlobalStyle> */}
+        </ThemeProvider>
+      </Provider>
     );
+    // const Root = () => (
+    //   <Provider store={store}>
+    //     <Router history={history}>
+    //       <Route path="/">
+    //         <UI terria={terria} allBaseMaps={allBaseMaps} viewState={viewState} />
+    //       </Route>
+    //     </Router>
+    //   </Provider>
+    // );
+    ReactDOM.render(<Root />, document.getElementById("ui"));
   };
 
   if (module.hot && process.env.NODE_ENV !== "production") {

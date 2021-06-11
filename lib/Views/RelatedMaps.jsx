@@ -15,10 +15,10 @@ function RelatedMaps(props) {
   return (
     <MenuPanel
       theme={dropdownTheme}
-      btnText="Related Maps"
+      btnText="갤러리"
       smallScreen={props.smallScreen}
       viewState={props.viewState}
-      btnTitle="See related maps"
+      btnTitle="관련 지도들 보기"
     >
       <div className={classNames(PanelStyles.header)}>
         <label className={PanelStyles.heading}>Related Maps</label>

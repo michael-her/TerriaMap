@@ -39,7 +39,9 @@ module.exports = function(devMode, hot) {
                         presets: ['@babel/preset-env', '@babel/preset-react'],
                         plugins: [
                             'babel-plugin-jsx-control-statements',
-                            '@babel/plugin-transform-modules-commonjs'
+                            '@babel/plugin-transform-modules-commonjs',
+                            // michael
+                            'babel-plugin-transform-class-properties'
                         ]
                     }
                 },

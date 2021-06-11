@@ -49,6 +49,14 @@
       ]
     },
     {
+      "name": "GeoWave",
+      "type": "geowave",
+      "description": "개발서버 (220)",
+      // "url": "http://192.168.0.40:8090"
+      // "url": "http://192.168.0.220:8090",
+      "forceProxy": true
+    },
+    {
       "name": "테스트",
       "type": "group",
       "preserveOrder": true,
@@ -136,14 +144,6 @@
         //   "forceProxy": true
         // }
       ]
-    },
-    {
-      "name": "지오웨이브",
-      "type": "geowave",
-      "description": "개발서버 (220)",
-      // "url": "http://192.168.0.40:8090"
-      "url": "http://192.168.0.220:8090",
-      "forceProxy": true
     },
     {
       "name": "지오서버",

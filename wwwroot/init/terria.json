@@ -42,7 +42,8 @@
           "name": "브이월드 (라벨)",
           "type": "open-street-map",
           "url": "https://xdworld.vworld.kr/2d/Hybrid/service",
-          "fileExtension": "png"
+          "fileExtension": "png",
+          "maximumNativeZoom": 19
           // "opacity": 1.0
         }
       ]

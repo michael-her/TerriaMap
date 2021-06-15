@@ -70,7 +70,7 @@
     "browserPrint": "For better printed results, please use {{appName}}'s Print button instead of your web browser's print feature.",
     "shortLinkShortening": "Shortening...",
     "shortLinkError": "An error occurred while attempting to shorten the URL.  Please check your internet connection and try again.",
-    "localDataNote": "<0><0>Note:</0></0><1>The following data sources will NOT be shared because they include data from this local system. To share these data sources, publish their data on a web server and <2>add them using a url</2>.</1>",
+    "localDataNote": "<0><0>주의:</0></0><1>아래 데이터 소스들은 사용자 로컬 컴퓨터의 데이터를 포함하고 있기 때문에 공유되지 않습니다. 이 데이터를 공유하려면 웹서버에 데이터를 발행하고 <2>그 URL를 사용하세요.</2>.</1>",
     "generatingUrl": "공유 URL 생성 중...",
     "printTitle": "지도 인쇄",
     "printExplanation": "이 지도의 인쇄 가능한 버전을 엽니다.",
@@ -1170,7 +1170,8 @@
       "open-street-map": "이미지타일",
       "wms": "이미지타일",
       "mvt": "벡터타일",
-      "gw-mvt": "벡터타일"
+      "gwMvt": "벡터타일",
+      "gwTwkb": "TWKB"
     }
   },
   "layerVisConfigs": {

@@ -5470,6 +5470,11 @@ fast-memoize@^2.5.2:
   resolved "https://registry.yarnpkg.com/fast-memoize/-/fast-memoize-2.5.2.tgz#79e3bb6a4ec867ea40ba0e7146816f6cdce9b57e"
   integrity sha512-Ue0LwpDYErFbmNnZSF0UH6eImUwDmogUO1jyE+JbN2gsQz/jICm1Ve7t9QT0rNSsfJt+Hs4/S3GnsDVjL4HVrw==
 
+fast64@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/fast64/-/fast64-0.5.0.tgz#2ca087dcab645dcd8b1106c8bc9179cd0516519f"
+  integrity sha1-LKCH3KtkXc2LEQbIvJF5zQUWUZ8=
+
 fault@^1.0.0:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/fault/-/fault-1.0.4.tgz#eafcfc0a6d214fc94601e170df29954a4f842f13"

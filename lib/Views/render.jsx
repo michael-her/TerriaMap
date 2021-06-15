@@ -47,6 +47,7 @@ const GlobalStyle = styled.div`
 `;
 
 export default function renderUi(terria, allBaseMaps, viewState) {
+  terria.store = store;
   let render = () => {
     const UI = require("./UserInterface").default;
     // michael

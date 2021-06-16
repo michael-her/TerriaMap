@@ -22,6 +22,7 @@ import GazetteerSearchProviderViewModel from 'terriajs/lib/ViewModels/GazetteerS
 import GnafSearchProviderViewModel from 'terriajs/lib/ViewModels/GnafSearchProviderViewModel.js';
 import defined from 'terriajs-cesium/Source/Core/defined';
 import render from './lib/Views/render';
+import store from './lib/Views/store'
 // import 'terriajs/lib/Core/knockout.mapping'
 
 // michael
@@ -45,29 +46,22 @@ import render from './lib/Views/render';
 //   // layout: "StandaloneLayout"
 // })
 
-// import createCatalogMemberFromType from 'terriajs/lib/Models/createCatalogMemberFromType';
-// import NaverStreetMapCatalogItem from './lib/Models/NaverMapCatalogItem';
-// import MapboxVectorTileCatalogItem from './lib/Models/MapboxVectorTileCatalogItem';
-
 // i18n 한국어
 import i18next from 'i18next';
 import translationKr from './lib/Language/ko-KR/translation.json';
-import createCatalogMemberFromType from 'terriajs/lib/Models/createCatalogMemberFromType';
+
 i18next.addResourceBundle('ko-KR', 'translation', translationKr, true, true);
 
 // Register all types of catalog members in the core TerriaJS.  If you only want to register a subset of them
 // (i.e. to reduce the size of your application if you don't actually use them all), feel free to copy a subset of
 // the code in the registerCatalogMembers function here instead.
 registerCatalogMembers();
-// createCatalogMemberFromType.register(
-//   "naver-street-map",
-//   NaverStreetMapCatalogItem
-// );
-// createCatalogMemberFromType.register("mvt", MapboxVectorTileCatalogItem);
 
 registerAnalytics();
 
 terriaOptions.analytics = new GoogleAnalytics();
+
+terriaOptions.store = store;
 
 // Construct the TerriaJS application, arrange to show errors to the user, and start it up.
 var terria = new Terria(terriaOptions);

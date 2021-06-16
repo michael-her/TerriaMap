@@ -8,7 +8,6 @@ import { syncHistoryWithStore } from "react-router-redux";
 
 import styled, { ThemeProvider } from "styled-components";
 import { theme } from "terriajs/lib/Styles";
-
 import store from "./store";
 
 const history = syncHistoryWithStore(browserHistory, store);
@@ -47,12 +46,12 @@ const GlobalStyle = styled.div`
 `;
 
 export default function renderUi(terria, allBaseMaps, viewState) {
-  terria.store = store;
+  // terria.store = store
   let render = () => {
     const UI = require("./UserInterface").default;
     // michael
     const Root = () => (
-      <Provider store={store}>
+      <Provider store={terria.store}>
         <ThemeProvider theme={theme}>
           {/* <GlobalStyle
             // this is to apply the same modal style as kepler.gl core

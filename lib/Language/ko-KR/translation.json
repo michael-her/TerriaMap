@@ -915,8 +915,8 @@
       "likenessesError": "The list of likenesses and the list of region codes do not contain the same number of elements."
     },
     "raiseError": {
-      "errorTitle": "An error occurred",
-      "errorMessage": "{{appName}}  experienced an error.  Please report this by emailing {{email}}. Details of the error are below."
+      "errorTitle": "오류",
+      "errorMessage": "{{appName}}에서 오류가 발생했습니다.  {{email}} 이메일로 이 오류를 보고해주세요. 자세한 오류 사항은 아래와 같습니다."
     },
     "regionMapping": {
       "noDataForDate": "No data for the selected date.",
@@ -1171,7 +1171,8 @@
       "wms": "이미지타일",
       "mvt": "벡터타일",
       "gwMvt": "벡터타일",
-      "gwTwkb": "TWKB"
+      "gwTwkb": "TWKB",
+      "csv": "CSV"
     }
   },
   "layerVisConfigs": {

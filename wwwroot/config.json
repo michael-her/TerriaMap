@@ -98,7 +98,8 @@
         "maximumLeafletZoomLevel": 20, // max 30
         "minimumZoomDistance": 160, // default 1.0
         "refreshToolEnabled": true,
-        "hideAllCredit": true
+        "hideAllCredit": true,
+        "fullScreenEnabled": true
     }
 }
 

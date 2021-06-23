@@ -1235,5 +1235,8 @@
   "mapTool": {
     "refreshMap": "지도 갱신",
     "toggleFullScreen": "전체화면 전환"
+  },
+  "misc": {
+    "scale": "스케일"
   }
 }

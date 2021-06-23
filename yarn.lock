@@ -6277,6 +6277,11 @@ fclone@1.0.11, fclone@^1.0.11:
   resolved "https://registry.yarnpkg.com/fclone/-/fclone-1.0.11.tgz#10e85da38bfea7fc599341c296ee1d77266ee640"
   integrity sha1-EOhdo4v+p/xZk0HClu4ddyZu5kA=
 
+feature-policy@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/feature-policy/-/feature-policy-0.6.0.tgz#4d1ee7e8fa615e023d1cdb884a1777a99220febf"
+  integrity sha512-l7+bg0ThDVR9s7JIg0NfUZvbSMRCQL4iPyPXVH6uUwCHh8tQ6kVgVybOTvkcMAzQeXevHnSrNlaXUK8m770HsA==
+
 figgy-pudding@^3.5.1:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/figgy-pudding/-/figgy-pudding-3.5.1.tgz#862470112901c727a0e495a80744bd5baa1d6790"

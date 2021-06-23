@@ -71,15 +71,6 @@ export default function renderUi(terria, allBaseMaps, viewState) {
         </ThemeProvider>
       </Provider>
     );
-    // const Root = () => (
-    //   <Provider store={store}>
-    //     <Router history={history}>
-    //       <Route path="/">
-    //         <UI terria={terria} allBaseMaps={allBaseMaps} viewState={viewState} />
-    //       </Route>
-    //     </Router>
-    //   </Provider>
-    // );
     ReactDOM.render(<Root />, document.getElementById("ui"));
   };
 

@@ -602,7 +602,7 @@
       "errorLoadingTitle": "Error loading GeoJSON",
       "errorParsingMessage": "An error occurred parsing the provided data as JSON.  This may indicate that the file is invalid or that it is not supported by {{appName}}. If you would like assistance or further information, please email us at {{email}}",
       "errorLoadingMessage": "An error occurred while loading a GeoJSON file.  This may indicate that the file is invalid or that it is not supported by {{appName}}. If you would like assistance or further information, please email us at {{email}}",
-      "couldNotLoadTitle": "Could not load JSON",
+      "couldNotLoadTitle": "JSON 로드 실패",
       "couldNotLoadMessage": "An error occurred while retrieving JSON data from the provided link. <p>If you entered the link manually, please verify that the link is correct.</p><p>This error may also indicate that the server does not support {{cors}}.  If this is your server, verify that CORS is enabled and enable it if it is not.  If you do not control the server, please contact the administrator of the server and ask them to enable CORS.  Or, contact the '{{appName}}' team by emailing {{email}} and ask us to add this server to the list of non-CORS-supporting servers that may be proxied by 'appName' itself. <p>If you did not enter this link manually, this error may indicate that the data source you're trying to add is temporarily unavailable or there is a problem with your internet connection.  Try adding the data source again, and if the problem persists, please report it by sending an email to {{email}}.</p>",
       "unsupportedBrowserTitle": "Unsupported web browser",
       "unsupportedBrowserMessage": "Sorry, your web browser does not support the File API, which {{appName}} requires in order to load this dataset.  Please upgrade your web browser.  For the best experience, we recommend the latest versions of {{chrome}} or {{firefox}} or {{internetExplorer}}.",
@@ -1005,10 +1005,10 @@
       "notSupportedErrorMessage": "{{name}} cannot be show in the 2D view.  Switch to 3D and try again"
     },
     "terria": {
-      "initErrorTitle": "Failed to initialize services",
+      "initErrorTitle": "서비스 초기화 실패",
       "initErrorMessage": "A problem occurred with the Terria server. This may cause some layers or the conversion service to be unavailable.",
-      "urlLoadErrorTitle": "Problem loading URL",
-      "urlLoadErrorMessage": "A problem occurred while initialising Terria with URL parameters.",
+      "urlLoadErrorTitle": "URL 로딩 문제",
+      "urlLoadErrorMessage": "URL 파라메터를 사용한 지도 초기화 중에 문제가 발생했습니다:",
       "loadingInitSourceErrorTitle": "Error loading initialization source",
       "loadingInitSourceErrorMessage": "Could not load initialization information from {{fragment}} because no initFragmentPaths are defined.",
       "loadingInitSourceError2Message": "An error occurred while loading initialization information from {{loadSource}}.  This may indicate that you followed an invalid link or that there is a problem with your Internet connection.",

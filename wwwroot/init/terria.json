@@ -63,6 +63,11 @@
       "isOpen": true,
       "items": [
         {
+          "name": "MOCKUP 도로망",
+          "url": "build/Terriajs/data/preview_response_11.json",
+          "type": "gwTwkb"
+        },
+        {
           "name": "TEST 선박데이터 (2.12.0)",
           "layer": "geowave:tb_track20140101_4326",
           "type": "gwMvt",

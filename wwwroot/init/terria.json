@@ -65,7 +65,7 @@
         {
           "name": "MOCKUP 도로망",
           "url": "../../wwwroot/data/preview_response_11.json",
-          // "url": "build/Terriajs/data/preview_response_11.json",
+          // "url": "build/Terriajs/data/preview_response_11.json", // only works in local dev
           "type": "gwTwkb"
         },
         {

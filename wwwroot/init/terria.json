@@ -72,8 +72,6 @@
           "layer": "geowave:tb_track20140101_4326",
           "type": "gwMvt",
           "url": "http://192.168.0.221:18080/geoserver/gwc/service/tms/1.0.0/geowave:tb_track20140101_4326@EPSG:900913@pbf/{z}/{x}/{-y}.pbf",
-          // "metadataUrl": "http://192.168.0.221:18080/geoserver/wfs?service=wfs&version=2.0.0&request=DescribeFeatureType&typeName=geowave:tb_track20140101_4326&outputFormat=application/json",
-          // "opacity": 1.0,
           "maximumNativeZoom": 20,
           "treat404AsError": false,
           "idProperty": "rfid_id",
@@ -84,8 +82,6 @@
           "layer": "geowave:gw_network_5179",
           "type": "gwMvt",
           "url": "http://192.168.0.221:18080/geoserver/gwc/service/tms/1.0.0/geowave:gw_network_5179@EPSG:900913@pbf/{z}/{x}/{-y}.pbf",
-          // "metadataUrl": "http://192.168.0.221:18080/geoserver/wfs?service=wfs&version=2.0.0&request=DescribeFeatureType&typeName=geowave:gw_network_5179&outputFormat=application/json",
-          // "opacity": 1.0,
           "maximumNativeZoom": 20,
           "treat404AsError": false,
           "idProperty": "id",
@@ -96,8 +92,6 @@
           "layer": "geowave:LARD_ADM_SECT_SGG_11",
           "type": "gwMvt",
           "url": "http://192.168.0.221:18080/geoserver/gwc/service/tms/1.0.0/geowave:LARD_ADM_SECT_SGG_11@EPSG:900913@pbf/{z}/{x}/{-y}.pbf",
-          // "metadataUrl": "http://192.168.0.221:18080/geoserver/wfs?service=wfs&version=2.0.0&request=DescribeFeatureType&typeName=geowave:LARD_ADM_SECT_SGG_11&outputFormat=application/json",
-          // "opacity": 1.0,
           "maximumNativeZoom": 20,
           "treat404AsError": false,
           "idProperty": "GID",
@@ -108,8 +102,6 @@
           "layer": "geowave:Z_SOP_BND_TOTAL_OA_PG",
           "type": "gwMvt",
           "url": "http://192.168.0.221:18080/geoserver/gwc/service/tms/1.0.0/geowave:Z_SOP_BND_TOTAL_OA_PG@EPSG:900913@pbf/{z}/{x}/{-y}.pbf",
-          // "metadataUrl": "http://192.168.0.221:18080/geoserver/wfs?service=wfs&version=2.0.0&request=DescribeFeatureType&typeName=geowave:Z_SOP_BND_TOTAL_OA_PG&outputFormat=application/json",
-          // "opacity": 1.0, 
           "maximumNativeZoom": 20,
           "treat404AsError": false,
           "idProperty": "OBJECTID",
@@ -120,34 +112,11 @@
           "layer": "topp:states",
           "type": "gwMvt",
           "url": "http://192.168.0.221:18080/geoserver/gwc/service/tms/1.0.0/topp:states@EPSG:900913@pbf/{z}/{x}/{-y}.pbf",
-          // "metadataUrl": "http://192.168.0.221:18080/geoserver/wfs?service=wfs&version=2.0.0&request=DescribeFeatureType&typeName=topp:states&outputFormat=application/json",
           "maximumNativeZoom": 20,
           "opacity": 1.0, 
           "treat404AsError": false,
           "forceProxy": true
-        },
-        // {
-        //   "name": "TEST topp_states (2.17.2)",
-        //   "layer": "states",
-        //   "type": "gwMvt",
-        //   // "url": "http://localhost:8080/geoserver/geoserver/gwc/service/tms/1.0.0/topp:states@EPSG:900913@pbf",
-        //   // "url": "http://localhost:8080/geoserver/topp/gwc/service/tms/1.0.0/states@EPSG:900913@pbf/{z}/{x}/{-y}.pbf",
-        //   "url": "http://192.168.0.221:18080/geoserver/gwc/service/tms/1.0.0/states@EPSG:900913@pbf/{z}/{x}/{-y}.pbf",
-        //   "metadataUrl": "http://192.168.0.221:18080/geoserver/wfs?service=wfs&version=2.0.0&request=DescribeFeatureType&typeName=topp:states&outputFormat=application/json",
-        //   "opacity": 1.0, 
-        //   "treat404AsError": false,
-        //   "forceProxy": true
-        // },
-        // {
-        //   "name": "TEST TL_SPBD_BULD_all",
-        //   "layer": "TL_SPBD_BULD_all",
-        //   "type": "gs-mvt",
-        //   "url": "http://192.168.0.221:28080/geoserver/gwc/service/tms/1.0.0/geoserver:TL_SPBD_BULD_all@EPSG:900913@pbf/{z}/{x}/{-y}.pbf",
-        //   "metadataUrl": "http://192.168.0.221:28080/geoserver/wfs?service=wfs&version=2.0.0&request=DescribeFeatureType&typeName=geoserver:TL_SPBD_BULD_all&outputFormat=application/json",
-        //   "opacity": 1.0, 
-        //   "treat404AsError": false,
-        //   "forceProxy": true
-        // }
+        }
       ]
     },
     {

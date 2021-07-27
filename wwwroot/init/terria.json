@@ -119,52 +119,52 @@
 //        }
 //      ]
 //    },
-    {
-      "name": "지오서버",
-      "type": "group",
-      "preserveOrder": true,
-      "isOpen": false,
-      "items": [
-        {
-          "name": "GeoServer (221)",
-          "type": "group",
-          "description": "개발 지오서버",
-          "items": [{
-            "name": "WMS (All)",
-            "type": "wms-getCapabilities",
-            "url": "http://192.168.0.221:18080/geoserver/wms"
-            // "forceProxy": true
-          },{
-            "name": "WFS (All)",
-            "type": "wfs-getCapabilities",
-            "url": "http://192.168.0.221:18080/geoserver/wfs"
-            // "forceProxy": true
-          }]
-        },
-        {
-          "name": "GeoServer (localhost)",
-          "type": "group",
-          "description": "내 지오서버",
-          "items": [{
-            "name": "WMS (All)",
-            "type": "wms-getCapabilities",
-            "url": "http://localhost:8080/geoserver/wms"
-          },{
-            "name": "WFS (All)",
-            "type": "wfs-getCapabilities",
-            "url": "http://localhost:8080/geoserver/wfs"
-          },{
-            "name": "WMS (geoserver)",
-            "type": "wms-getCapabilities",
-            "url": "http://localhost:8080/geoserver/geoserver/wms"
-          },{
-            "name": "WFS (geoserver)",
-            "type": "wfs-getCapabilities",
-            "url": "http://localhost:8080/geoserver/geoserver/wfs"
-          }]
-        }
-      ]
-    },
+//    {
+//      "name": "지오서버",
+//      "type": "group",
+//      "preserveOrder": true,
+//      "isOpen": false,
+//      "items": [
+//        {
+//          "name": "GeoServer (221)",
+//          "type": "group",
+//          "description": "개발 지오서버",
+//          "items": [{
+//            "name": "WMS (All)",
+//            "type": "wms-getCapabilities",
+//            "url": "http://192.168.0.221:18080/geoserver/wms"
+//            // "forceProxy": true
+//          },{
+//            "name": "WFS (All)",
+//            "type": "wfs-getCapabilities",
+//            "url": "http://192.168.0.221:18080/geoserver/wfs"
+//            // "forceProxy": true
+//          }]
+//        },
+//        {
+//          "name": "GeoServer (localhost)",
+//          "type": "group",
+//          "description": "내 지오서버",
+//          "items": [{
+//            "name": "WMS (All)",
+//            "type": "wms-getCapabilities",
+//            "url": "http://localhost:8080/geoserver/wms"
+//          },{
+//            "name": "WFS (All)",
+//            "type": "wfs-getCapabilities",
+//            "url": "http://localhost:8080/geoserver/wfs"
+//          },{
+//            "name": "WMS (geoserver)",
+//            "type": "wms-getCapabilities",
+//            "url": "http://localhost:8080/geoserver/geoserver/wms"
+//          },{
+//            "name": "WFS (geoserver)",
+//            "type": "wfs-getCapabilities",
+//            "url": "http://localhost:8080/geoserver/geoserver/wfs"
+//          }]
+//        }
+//      ]
+//    },
 //    {
 //      "name": "예제 데이터셋",
 //      "type": "group",

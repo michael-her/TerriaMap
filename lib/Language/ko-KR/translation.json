@@ -372,7 +372,7 @@
       "playSlower": "천천히 재생",
       "playFaster": "빠르게 재생"
     },
-    "time": "시간" 
+    "time": "시간"
   },
   "satellite": {
     "pickPoint": "Select a point by clicking on the map.",
@@ -614,7 +614,7 @@
       "webServer": "지오웨이브 서버",
       "invalidWMSServerTitle": "올바르지 않은 지오웨이브 서버",
       "groupNotAvailableTitle": "카탈로그 그룹을 사용할 수 없습니다",
-      "groupNotAvailableMessage": "지오웨이브 서버에 API 호출하는 중 오류가 발생했습니다. 서버가 유요한 API 응답을 하지 않습니다. <p>수동으로 링크를 입력했다면, 입력한 링크가 정확한지 확인해주세요.</p> <p>수동으로 링크를 입력하지 않았다면, 이 오류는 사용자의 인터넷 연결 문제로 인해 접근하려는 그룹을 일시적으로 사용하지 못하는 것일 수도 있습니다. 그룹을 다시 열어 보시고, 문제가 계속된다면, {{email}}에 이메일로 역락해 주세요.</p>",
+      "groupNotAvailableMessage": "지오웨이브 서버에 API 호출하는 중 오류가 발생했습니다. 서버가 유요한 API 응답을 하지 않습니다. <p>수동으로 링크를 입력했다면, 입력한 링크가 정확한지 확인해주세요.</p> <p>수동으로 링크를 입력하지 않았다면, 이 오류는 사용자의 인터넷 연결 문제로 인해 접근하려는 그룹을 일시적으로 사용하지 못하는 것일 수도 있습니다. 그룹을 다시 열어 보시고, 문제가 계속된다면, 관리자에게 문의하세요.</p>",
       "groupNotAvailableCorsMessage": "<p>This error may also indicate that the server does not support <a href=\"http://enable-cors.org/\" target=\"_blank\">CORS</a>.  If this is your server, verify that CORS is enabled and enable it if it is not.  If you do not control the server, please contact the administrator of the server and ask them to enable CORS.  Or, contact the '{{appName}}' Map team by emailing {{email}} and ask us to add this server to the list of non-CORS-supporting servers that may be proxied by '{{appName}}' itself.</p>"
     },
     "abs": {

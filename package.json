@@ -84,7 +84,7 @@
     "yargs": "^11.0.0"
   },
   "scripts": {
-    "docker-build-local": "node ./deploy/docker/create-docker-context-for-node-components.js --build --push --tag auto --local",
+    "docker-build-local": "node ./deploy/docker/create-docker-context-for-node-components.js --build --push --tag terriamap:14.17.0 --local --no-cache ",
     "docker-build-prod": "node ./deploy/docker/create-docker-context-for-node-components.js --build --push --tag auto",
     "docker-build-ci": "node ./deploy/docker/create-docker-context-for-node-components.js --build",
     "start": "pm2 start ecosystem.config.js --update-env -- --config-file devserverconfig.json",
@@ -109,6 +109,7 @@
   "workspaces": [
     "packages/cesium",
     "packages/terriajs",
-    "packages/terriajs-server"
+    "packages/terriajs-server",
+    "packages/flatgeobuf"
   ]
 }

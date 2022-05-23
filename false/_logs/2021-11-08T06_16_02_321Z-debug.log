@@ -1,0 +1,47 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'docker-build-local',
+1 verbose cli   '--no-cache'
+1 verbose cli ]
+2 info using npm@6.14.13
+3 info using node@v14.17.0
+4 verbose run-script [
+4 verbose run-script   'predocker-build-local',
+4 verbose run-script   'docker-build-local',
+4 verbose run-script   'postdocker-build-local'
+4 verbose run-script ]
+5 info lifecycle terriajs-map@0.0.1~predocker-build-local: terriajs-map@0.0.1
+6 info lifecycle terriajs-map@0.0.1~docker-build-local: terriajs-map@0.0.1
+7 verbose lifecycle terriajs-map@0.0.1~docker-build-local: unsafe-perm in lifecycle true
+8 verbose lifecycle terriajs-map@0.0.1~docker-build-local: PATH: /usr/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/data/map/TerriaMap/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
+9 verbose lifecycle terriajs-map@0.0.1~docker-build-local: CWD: /data/map/TerriaMap
+10 silly lifecycle terriajs-map@0.0.1~docker-build-local: Args: [
+10 silly lifecycle   '-c',
+10 silly lifecycle   'node ./deploy/docker/create-docker-context-for-node-components.js --build --push --tag auto --local'
+10 silly lifecycle ]
+11 silly lifecycle terriajs-map@0.0.1~docker-build-local: Returned: code: 1  signal: null
+12 info lifecycle terriajs-map@0.0.1~docker-build-local: Failed to exec docker-build-local script
+13 verbose stack Error: terriajs-map@0.0.1 docker-build-local: `node ./deploy/docker/create-docker-context-for-node-components.js --build --push --tag auto --local`
+13 verbose stack Exit status 1
+13 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-lifecycle/index.js:332:16)
+13 verbose stack     at EventEmitter.emit (events.js:376:20)
+13 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-lifecycle/lib/spawn.js:55:14)
+13 verbose stack     at ChildProcess.emit (events.js:376:20)
+13 verbose stack     at maybeClose (internal/child_process.js:1055:16)
+13 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:288:5)
+14 verbose pkgid terriajs-map@0.0.1
+15 verbose cwd /data/map/TerriaMap
+16 verbose Linux 3.10.0-1160.21.1.el7.x86_64
+17 verbose argv "/usr/bin/node" "/usr/bin/npm" "run" "docker-build-local" "--no-cache"
+18 verbose node v14.17.0
+19 verbose npm  v6.14.13
+20 error code ELIFECYCLE
+21 error errno 1
+22 error terriajs-map@0.0.1 docker-build-local: `node ./deploy/docker/create-docker-context-for-node-components.js --build --push --tag auto --local`
+22 error Exit status 1
+23 error Failed at the terriajs-map@0.0.1 docker-build-local script.
+23 error This is probably not a problem with npm. There is likely additional logging output above.
+24 verbose exit [ 1, true ]

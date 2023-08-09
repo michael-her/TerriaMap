@@ -57,7 +57,7 @@
     "fs-extra": "^7.0.1",
     "generate-terriajs-schema": "^1.5.0",
     "gulp": "^4.0.0",
-    "husky": "6",
+    "husky": "^8.0.0",
     "json5": "^2.1.0",
     "node-notifier": "^5.1.2",
     "node-sass": "^4.14.1",
@@ -99,7 +99,8 @@
     "get-deploy-overrides": "aws s3 --profile $npm_package_config_awsProfile cp $npm_package_config_awsS3ServerConfigOverridePath ./privateserverconfig.json && aws s3 --profile $npm_package_config_awsProfile cp $npm_package_config_awsS3ClientConfigOverridePath ./wwwroot/privateconfig.json",
     "prettier": "prettier --write \"**/*\"",
     "pretty-quick": "pretty-quick",
-    "prettier-check": "prettier --check \"**/*\""
+    "prettier-check": "prettier --check \"**/*\"",
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
@@ -109,6 +110,7 @@
   "workspaces": [
     "packages/cesium",
     "packages/terriajs",
-    "packages/terriajs-server"
+    "packages/terriajs-server",
+    "packages/flatgeobuf"
   ]
 }
